@@ -60,7 +60,7 @@ form.whatsapp-form {
 <body>
 <div>
 </br>
-<h5><center>HIGGS DOMINO</center></h5>
+<h5><center> ORDER HIGGS DOMINO</center></h5>
 </br>
 </div>
 </div>
@@ -77,7 +77,7 @@ form.whatsapp-form {
       <div class="card bg-dark">
           <div class="card-content">
               <div class="px-3 py-3">
-                  <div class="h5 text-light">1. Masukkan ID Dan Nickname</div><hr>
+                  <div class="h5 text-light">1. Masukkan id dan nickname</div><hr>
                   <tr>
                       <td><input type="number" id="userid" name="userid" class="inputz" placeholder="ID"><input type="text" id="nick" name="nick" class="inputz" placeholder="Nickname"></td>
                   </tr>
@@ -94,10 +94,10 @@ form.whatsapp-form {
                                       <div class="card bg-dark">
                                           <div class="card-content">
                                               <div class="px-3 py-3">
-                                                  <div class="h5 text-light"> 2. Pilih Nominal Serta Harga</div><hr>               
+                                                  <div class="h5 text-light"> 2. Pilih harga product</div><hr>               
 <div class="datainput">
   <select id="order" name="order">
-  <option value="" selected disabled>Pilih Nominal</option>
+  <option value="" selected disabled>Pilih nominal</option>
 <option value="100M Rp 6.500">100M Harga Rp.6.500</Rp> </option><option value="200M Rp 13.000">200M Harga Rp.13.000</option><option value="300M Rp 19.500">300M Harga Rp.19.500</option><option value="400M Rp 26.000">400M Harga Rp.26.000</option><option value="500M Rp 32.000">500M Harga Rp.32.000</option><option value="600M Rp 39.000">600M Harga Rp.39.000</option><option value="700M Rp 45.000">700M Harga Rp.45.000</option><option value="800M Rp 52.000">800M Harga Rp.52.000</option><option value="900M Rp 58.500">900M Harga Rp.58.500</option><option value="1B Rp 60.000 (Promo)">1B Harga Rp.60.000</option><option value="2B Rp 120.000 (Promo)">2B Harga Rp.260.000</option><option value="5B Rp 300.000 (Promo)">5B Harga Rp.300.000</option><option value="10B Rp 600.000 (Promo)">10B Harga Rp.600.000</option>                                                                    
 </select>
 </div>
@@ -112,7 +112,7 @@ form.whatsapp-form {
       <div class="card bg-dark">
           <div class="card-content">
               <div class="px-3 py-3">   
-                <div class="h5 text-light">3. Pilih Nominal Metode Pembayaran</div><hr> 
+                <div class="h5 text-light">3. Metode pembayaran</div><hr> 
                 <div class="datainput">
                   <select id="pembayaran" name="pembayaran">
                     <option value="" selected disabled>Pilih Metode Pembayaran</option>
@@ -144,14 +144,14 @@ form.whatsapp-form {
 <div class="card bg-dark">
     <div class="card-content">
         <div class="px-3 py-3">
-          <div class="h5 text-light">4. Rincian Status Pemesanan</div><hr>
+          <div class="h5 text-light">4. Rincian pemesanan</div><hr>
           <p class="text-white d-flex justify-content-between flex-wrap mb-50">ID : <span class="userid">...</span></p>
           <p class="text-white d-flex justify-content-between flex-wrap mb-50">Nickname : <span class="nick">...</span></p>
           <p class="text-white d-flex justify-content-between flex-wrap mb-50">Order : <span class="order">...</span></p>
           <p class="text-white d-flex justify-content-between flex-wrap mb-50">Harga : <span class="harga">0</span></p>
           <p class="text-white d-flex justify-content-between flex-wrap mb-50">Pembayaran : <span class="pembayaran">...</span></p><hr>
-          
-        
+          <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">BELI SEKARANG</button>
+             <small class="text-success d-block text-center mt-3">Dengan Membeli Berarti Anda Telah Menyetujui <a href="../aturan_kebijakan.php" class="text-decoration-none">Aturan & Kebijakan</a> Pada Layanan Kami.</small>     
       </div>
   </div>
 </div>
@@ -195,18 +195,6 @@ $('.pembayaran').text(payment);
 </div>
 </div>
 
-<div class="card mt-4">
-  <div class="row">
-      <div class="col card-header py-3">
-          <p class="m-0 font-weight-bold text-primary"></p>
-      </div>
-<div class="col card-header text-right"></div>
-<button type="button" class="btn btn-primary plus" data-toggle="modal" data-target="#exampleModal">
-  <span data-feather="plus"></span>
- LANJUT KE METODE PEMBAYARAN   .</button>
-
-
-
 
 
 
@@ -225,14 +213,12 @@ $('.pembayaran').text(payment);
         </button>
       </div>
         <div class="modal-body">
-                                <p>HIGGH DOMINO </p> 
-                               
-                               <p></br>silakan lakukan pembayaran sesuai metode pembayaran yang kamu pilih , transfer sesuai harga pesanan!! jika transferan kurang maka akan di refund.</p>
+                                <p>klik bayar sekarang untuk melanjutkan </p>  
+                               <p></br>Silakan lakukan pembayaran sesuai metode pembayaran yang kamu pilih , transfer sesuai harga pesanan!! jika transferan kurang maka akan di refund.</p>
                                 <p><img src="img/pmb.jpg" class="mb-2 img-fluid rounded"/></p>
-                                <h4 class="text-center text-bold">LANJUT DENGAN KLIK PESAN ⬇️</h4>
                             </div>
       <div class="modal-footer">
-  <a class="send_form" href="javascript:void" type="submit" title="Send to Whatsapp">PESAN</a>
+  <a class="send_form" href="javascript:void" type="submit" title="Send to Whatsapp">BAYAR SEKARANG</a>
   <div id="text-info"></div>
       </div>
 </div>
@@ -267,9 +253,9 @@ var input_id = $("#userid").val(),
 /* Final Whatsapp URL */
 var blanter_whatsapp = walink + '?phone=' + phone + '&text=' + walink2 + '%0A%0A' +
     '*ID* :  ' + input_id + '  [  ' + input_nick + '  ]  ' + '%0A' +
-    '*Order* : ' + input_order + '%0A' +
-    '*Pembayaran* :' + input_pembayaran +'%0A' +
-    '%0A' + '%0A' + 'silahkan melakukan pembayaran sesuai harga dan metode pembayaran yang kamu pilih serta kirim bukti pembayaran!';
+    '*ORDER* : ' + input_order + '%0A' +
+    '*PEMBAYARAN* :' + input_pembayaran +'%0A' +
+    '%0A' + '%0A' + 'Silahkan melakukan pembayaran sesuai harga dan metode pembayaran yang kamu pilih serta kirim bukti pembayaran!';
 
 /* Whatsapp Window Open */
 window.open(blanter_whatsapp,'_blank');
